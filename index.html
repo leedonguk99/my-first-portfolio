@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">포트폴리오</div>
+            <ul class="nav-menu">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">기술</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">안녕하세요,<br>저는 <span class="highlight">개발자</span>입니다</h1>
+            <p class="hero-subtitle">창의적인 웹 솔루션을 만드는 것을 좋아합니다</p>
+            <a href="#contact" class="btn btn-primary">연락하기</a>
+        </div>
+        <div class="hero-scroll">
+            <span>스크롤</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About 섹션 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">소개</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        열정적인 개발자로서, 사용자 중심의 웹 애플리케이션을 만드는 것을 즐깁니다.
+                        깔끔한 코드와 직관적인 사용자 경험을 중요하게 생각합니다.
+                    </p>
+                    <p>
+                        지속적인 학습과 성장을 통해 최신 기술 트렌드를 따라가며,
+                        실용적이고 혁신적인 솔루션을 제공하는 것이 목표입니다.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>프로필 이미지</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills 섹션 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>프론트엔드</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>백엔드</h3>
+                    <p>Node.js, Python, 데이터베이스</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>디자인</h3>
+                    <p>UI/UX, 반응형 디자인</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>도구</h3>
+                    <p>Git, VS Code, Docker</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects 섹션 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">프로젝트 이미지</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>프로젝트 1</h3>
+                        <p>프로젝트에 대한 설명을 여기에 작성하세요. 사용된 기술과 주요 기능을 포함할 수 있습니다.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">보기</a>
+                            <a href="#" class="project-link">코드</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">프로젝트 이미지</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>프로젝트 2</h3>
+                        <p>프로젝트에 대한 설명을 여기에 작성하세요. 사용된 기술과 주요 기능을 포함할 수 있습니다.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">보기</a>
+                            <a href="#" class="project-link">코드</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">프로젝트 이미지</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>프로젝트 3</h3>
+                        <p>프로젝트에 대한 설명을 여기에 작성하세요. 사용된 기술과 주요 기능을 포함할 수 있습니다.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">보기</a>
+                            <a href="#" class="project-link">코드</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-content">
+                <p class="contact-description">프로젝트 협업이나 문의사항이 있으시면 언제든지 연락해주세요.</p>
+                <div class="contact-links">
+                    <a href="mailto:your-email@example.com" class="contact-link">
+                        <span class="contact-icon">✉️</span>
+                        <span>이메일</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <span class="contact-icon">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 포트폴리오. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
