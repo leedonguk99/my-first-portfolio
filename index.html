@@ -12,12 +12,28 @@
         <div class="nav-container">
             <div class="nav-logo">포트폴리오</div>
             <ul class="nav-menu">
-                <li><a href="#home">홈</a></li>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#skills">기술</a></li>
-                <li><a href="#projects">프로젝트</a></li>
-                <li><a href="#contact">연락처</a></li>
+                <li><a href="#home" data-i18n="nav.home">홈</a></li>
+                <li><a href="#about" data-i18n="nav.about">소개</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">기술</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">프로젝트</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">연락처</a></li>
             </ul>
+            <div class="nav-actions">
+                <div class="language-selector">
+                    <button class="language-toggle" aria-label="언어 선택">
+                        <span class="language-icon">🌐</span>
+                        <span class="language-text">KO</span>
+                    </button>
+                    <div class="language-menu">
+                        <button class="language-option" data-lang="ko">한국어</button>
+                        <button class="language-option" data-lang="en">English</button>
+                        <button class="language-option" data-lang="ja">日本語</button>
+                    </div>
+                </div>
+                <button class="theme-toggle" aria-label="다크모드 토글">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -29,12 +45,12 @@
     <!-- Hero 섹션 -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">안녕하세요,<br>저는 <span class="highlight">이동욱</span>입니다</h1>
-            <p class="hero-subtitle">창의적인 웹 솔루션을 만드는 것을 좋아합니다</p>
-            <a href="#contact" class="btn btn-primary">연락하기</a>
+            <h1 class="hero-title" data-i18n="hero.title">안녕하세요,<br>저는 <span class="highlight">이동욱</span>입니다</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">창의적인 웹 솔루션을 만드는 것을 좋아합니다</p>
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">연락하기</a>
         </div>
         <div class="hero-scroll">
-            <span>스크롤</span>
+            <span data-i18n="contact.scroll">스크롤</span>
             <div class="scroll-arrow"></div>
         </div>
     </section>
@@ -42,14 +58,14 @@
     <!-- About 섹션 -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">소개</h2>
+            <h2 class="section-title" data-i18n="about.title">소개</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
+                    <p data-i18n="about.text1">
                         열정적인 개발자로서, 사용자 중심의 웹 애플리케이션을 만드는 것을 즐깁니다.
                         깔끔한 코드와 직관적인 사용자 경험을 중요하게 생각합니다.
                     </p>
-                    <p>
+                    <p data-i18n="about.text2">
                         지속적인 학습과 성장을 통해 최신 기술 트렌드를 따라가며,
                         실용적이고 혁신적인 솔루션을 제공하는 것이 목표입니다.
                     </p>
@@ -66,26 +82,26 @@
     <!-- Skills 섹션 -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">기술 스택</h2>
+            <h2 class="section-title" data-i18n="skills.title">기술 스택</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">🌐</div>
-                    <h3>프론트엔드</h3>
+                    <h3 data-i18n="skills.frontend">프론트엔드</h3>
                     <p>HTML, CSS, JavaScript, React</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">⚙️</div>
-                    <h3>백엔드</h3>
+                    <h3 data-i18n="skills.backend">백엔드</h3>
                     <p>Node.js, Python, 데이터베이스</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🎨</div>
-                    <h3>디자인</h3>
+                    <h3 data-i18n="skills.design">디자인</h3>
                     <p>UI/UX, 반응형 디자인</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🔧</div>
-                    <h3>도구</h3>
+                    <h3 data-i18n="skills.tools">도구</h3>
                     <p>Git, VS Code, Docker</p>
                 </div>
             </div>
@@ -95,56 +111,160 @@
     <!-- Projects 섹션 -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">프로젝트</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80');">
+            <h2 class="section-title" data-i18n="projects.title">프로젝트</h2>
+            <!-- 프로젝트 한 줄 정의 -->
+            <div class="project-overview">
+                <div class="project-elevator-pitch">
+                    <div class="project-detail-image">
+                        <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=600&q=80" alt="커피 AI 추천 시스템">
                     </div>
-                    <div class="project-content">
-                        <h3>프로젝트 1</h3>
-                        <p>프로젝트에 대한 설명을 여기에 작성하세요. 사용된 기술과 주요 기능을 포함할 수 있습니다.</p>
+                    <div class="project-detail-content">
+                        <h3 class="project-detail-title" data-i18n="projects.projectTitle">커피 AI 추천 시스템</h3>
+                        <p class="elevator-pitch" data-i18n="projects.elevatorPitch">사용자의 취향 데이터를 학습해, 로스팅·산지·풍미 프로파일 기반으로 개인 맞춤형 커피를 추천하는 AI 커피 큐레이션 앱</p>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">보기</a>
-                            <a href="#" class="project-link">코드</a>
+                            <span class="tag">React Native</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">빅데이터</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80');">
+            </div>
+
+            <!-- 프로젝트 상세 섹션 -->
+            <div class="project-details">
+                <!-- 문제 정의 -->
+                <div class="project-detail-section">
+                    <div class="project-detail-image">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="커피 선택의 어려움">
                     </div>
-                    <div class="project-content">
-                        <h3>프로젝트 2</h3>
-                        <p>프로젝트에 대한 설명을 여기에 작성하세요. 사용된 기술과 주요 기능을 포함할 수 있습니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">보기</a>
-                            <a href="#" class="project-link">코드</a>
+                    <div class="project-detail-text">
+                        <h4 class="detail-section-title" data-i18n="projects.problemTitle">1️⃣ 문제 정의</h4>
+                        <ul class="detail-list">
+                            <li data-i18n="projects.problem1"><strong>커피 선택 기준이 전문적이고 복잡함</strong>
+                                <br>로스팅, 산지, 프로세싱, 향미 노트 등 다양한 요소로 인해 초보자·중급자 모두 "내 취향에 맞는 커피를 고르기 어렵다"는 문제</li>
+                            <li data-i18n="projects.problem2"><strong>기존 추천의 한계</strong>
+                                <br>단순 인기순이나 전문가 기준 중심으로 개인 취향 반영 부족</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 해결 방안 -->
+                <div class="project-detail-section reverse">
+                    <div class="project-detail-image">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&q=80" alt="AI 추천 시스템">
+                    </div>
+                    <div class="project-detail-text">
+                        <h4 class="detail-section-title" data-i18n="projects.solutionTitle">2️⃣ 해결 방안</h4>
+                        <ul class="detail-list">
+                            <li data-i18n="projects.solution1">사용자의 선호 데이터를 구조화</li>
+                            <li data-i18n="projects.solution2">커피 데이터를 객관적 지표로 벡터화</li>
+                            <li data-i18n="projects.solution3">AI 알고리즘을 통해 취향 기반 맞춤 추천 시스템 제공</li>
+                        </ul>
+                        <p class="solution-highlight" data-i18n="projects.solutionHighlight">👉 결과적으로 <strong>"커피를 공부하지 않아도, 취향에 맞는 커피를 발견할 수 있는 경험"</strong>을 제공</p>
+                    </div>
+                </div>
+
+                <!-- 핵심 기능 -->
+                <div class="project-detail-section">
+                    <div class="project-detail-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="핵심 기능">
+                    </div>
+                    <div class="project-detail-text">
+                        <h4 class="detail-section-title" data-i18n="projects.featuresTitle">3️⃣ 핵심 기능</h4>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <h5 data-i18n="projects.feature1Title">① 사용자 취향 수집</h5>
+                                <ul>
+                                    <li data-i18n="projects.feature1_1">선호 로스팅 단계</li>
+                                    <li data-i18n="projects.feature1_2">좋아하는 풍미(산미/단맛/바디감 등)</li>
+                                    <li data-i18n="projects.feature1_3">이전 커피 평가(별점, 피드백)</li>
+                                </ul>
+                            </div>
+                            <div class="feature-item">
+                                <h5 data-i18n="projects.feature2Title">② 커피 데이터베이스</h5>
+                                <ul>
+                                    <li data-i18n="projects.feature2_1">로스팅 정도</li>
+                                    <li data-i18n="projects.feature2_2">생산지·품종</li>
+                                    <li data-i18n="projects.feature2_3">프로세싱 방식</li>
+                                    <li data-i18n="projects.feature2_4">향미 프로파일</li>
+                                </ul>
+                            </div>
+                            <div class="feature-item">
+                                <h5 data-i18n="projects.feature3Title">③ AI 추천 로직</h5>
+                                <ul>
+                                    <li data-i18n="projects.feature3_1">협업 필터링 + 콘텐츠 기반 추천 혼합</li>
+                                    <li data-i18n="projects.feature3_2">사용자 취향과 커피 특성 간 유사도 분석</li>
+                                    <li data-i18n="projects.feature3_3">사용 이력에 따라 추천 결과 지속 학습</li>
+                                </ul>
+                            </div>
+                            <div class="feature-item">
+                                <h5 data-i18n="projects.feature4Title">④ 추천 결과 제공</h5>
+                                <ul>
+                                    <li data-i18n="projects.feature4_1">"당신과 87% 유사한 커피"</li>
+                                    <li data-i18n="projects.feature4_2">추천 이유 시각화 (ex. 산미 선호 + 에티오피아 내추럴)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80');">
+
+                <!-- 기술적 접근 방식 -->
+                <div class="project-detail-section reverse">
+                    <div class="project-detail-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80" alt="기술 스택">
                     </div>
-                    <div class="project-content">
-                        <h3>프로젝트 3</h3>
-                        <p>프로젝트에 대한 설명을 여기에 작성하세요. 사용된 기술과 주요 기능을 포함할 수 있습니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind CSS</span>
+                    <div class="project-detail-text">
+                        <h4 class="detail-section-title" data-i18n="projects.techTitle">4️⃣ 기술적 접근 방식</h4>
+                        <div class="tech-approach">
+                            <div class="tech-item">
+                                <h5 data-i18n="projects.tech1Title">빅데이터 분석</h5>
+                                <ul>
+                                    <li data-i18n="projects.tech1_1">커피 속성 데이터 정규화</li>
+                                    <li data-i18n="projects.tech1_2">사용자 행동 데이터 축적</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h5 data-i18n="projects.tech2Title">AI / ML</h5>
+                                <ul>
+                                    <li data-i18n="projects.tech2_1">취향 벡터화</li>
+                                    <li data-i18n="projects.tech2_2">추천 알고리즘 적용</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h5 data-i18n="projects.tech3Title">확장성 고려</h5>
+                                <ul>
+                                    <li data-i18n="projects.tech3_1">신규 커피·로스터리 데이터 추가 가능</li>
+                                    <li data-i18n="projects.tech3_2">추천 정확도 지속 개선</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">보기</a>
-                            <a href="#" class="project-link">코드</a>
+                        <p class="tech-highlight" data-i18n="projects.techHighlight">👉 "단순 추천 앱이 아니라 학습하는 시스템"이라는 점을 강조</p>
+                    </div>
+                </div>
+
+                <!-- 기대 효과 -->
+                <div class="project-detail-section">
+                    <div class="project-detail-image">
+                        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="기대 효과">
+                    </div>
+                    <div class="project-detail-text">
+                        <h4 class="detail-section-title" data-i18n="projects.valueTitle">5️⃣ 기대 효과</h4>
+                        <div class="value-proposition">
+                            <div class="value-item">
+                                <h5 data-i18n="projects.value1Title">사용자 관점</h5>
+                                <ul>
+                                    <li data-i18n="projects.value1_1">실패 없는 커피 선택</li>
+                                    <li data-i18n="projects.value1_2">취향의 언어화 → 커피 이해도 상승</li>
+                                </ul>
+                            </div>
+                            <div class="value-item">
+                                <h5 data-i18n="projects.value2Title">산업 관점</h5>
+                                <ul>
+                                    <li data-i18n="projects.value2_1">로스터리·카페와의 연계 가능</li>
+                                    <li data-i18n="projects.value2_2">개인화 기반 커피 마케팅 플랫폼으로 확장</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,21 +275,19 @@
     <!-- Contact 섹션 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">연락처</h2>
+            <h2 class="section-title" data-i18n="contact.title">연락처</h2>
             <div class="contact-content">
-                <p class="contact-description">프로젝트 협업이나 문의사항이 있으시면 언제든지 연락해주세요.</p>
+                <p class="contact-description" data-i18n="contact.description">프로젝트 협업이나 문의사항이 있으시면 언제든지 연락해주세요.</p>
                 <div class="contact-links">
-                    <a href="mailto:your-email@example.com" class="contact-link">
+                    <a href="mailto:leedonguk12@naver.com" class="contact-link">
                         <span class="contact-icon">✉️</span>
-                        <span>이메일</span>
+                        <span data-i18n="contact.email">이메일</span>
+                        <span class="contact-info">leedonguk12@naver.com</span>
                     </a>
-                    <a href="https://github.com" target="_blank" class="contact-link">
-                        <span class="contact-icon">💻</span>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact-link">
-                        <span class="contact-icon">💼</span>
-                        <span>LinkedIn</span>
+                    <a href="tel:08034142094" class="contact-link">
+                        <span class="contact-icon">📱</span>
+                        <span data-i18n="contact.phone">연락처</span>
+                        <span class="contact-info">080-3414-2094</span>
                     </a>
                 </div>
             </div>
@@ -179,10 +297,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 포트폴리오. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2024 포트폴리오. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
